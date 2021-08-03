@@ -56,10 +56,10 @@ class Navbar extends Component {
     var hr = dt.getHours();
     var min = dt.getMinutes();
     //getMinutes() may return a 1 digit number so supplement with a '0' to look nicer on display
-    if (min.toString().length == 1) {
+    if (min.toString().length === 1) {
       min = "0" + min;
     }
-    if (hr.toString().length == 1 ) {
+    if (hr.toString().length === 1 ) {
       hr = "0" + hr;
     }
     
