@@ -2,7 +2,6 @@ import profile_picture from './profile_picture-removebg.png'
 import sunny_anim from './sunny_joypixels.gif'
 import sunset_anim from './sunset.gif'
 import sunrise_anim from './sunrise.gif'
-import {Link} from "react-router-dom";
 import resume from './VyResume2021.pdf'
 
 function Home() {
@@ -65,10 +64,10 @@ function Home() {
                     <a href={resume}>Resume</a> | <a href="https://www.linkedin.com/in/vy-phan-ut2020/"> LinkedIn </a>
                   </li>
                   <li>
-                    <a href="blog">Blog</a>
+                    <a href="/blog">Blog</a>
                   </li>
                   <li>
-                  <a href="projects">Projects</a>
+                  <a href="/projects">Projects</a>
                   </li>
                 </ul>
               </div>

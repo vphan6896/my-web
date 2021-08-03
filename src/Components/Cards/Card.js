@@ -1,5 +1,3 @@
-import {Link} from "react-router-dom";
-
 function Card(props) {
     return(
         <div className="column is-one-quarter">
