@@ -56,7 +56,7 @@ function Home() {
               <div className="message-body is-size-3 has-text-weight-medium">
                 <ul className="has-text-left">
                   <li className="mb-2">
-                    <button>Resume</button>
+                    <a href="resume">Resume</a>
                   </li>
                   <li>
                     <a href="https://www.linkedin.com/in/vy-phan-ut2020/" > <img alt="LinkedIn logo" style={{height:"45px", width:"160px"}} src={linkedin_logo}/>  </a>
