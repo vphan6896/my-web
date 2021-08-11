@@ -1,6 +1,6 @@
 function Card(props) {
     return(
-        <div className="column is-one-quarter">
+        <div className="column is-one-quarter fade">
             <div className="card">
             <div className="card-image">
                 <figure className="image is-5by3">

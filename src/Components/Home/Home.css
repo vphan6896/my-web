@@ -1,0 +1,36 @@
+
+  .intro {
+    overflow: display;
+    animation: fadeIn 1s, slideIntro 2s ease 2s forwards;
+  }
+
+  @keyframes slideIntro
+  {
+    0% {height: 100%; opacity:1;}
+    50% {opacity:0;}
+    100% {height: 0px; opacity:0;}
+  }
+
+  .profile {
+    position: relative;
+    animation:  slideProfile 7s;
+  }
+
+  .hide {
+    visibility: hidden;
+  }
+
+  .fade {
+    overflow: display;
+    animation: fadeIn 1s;
+  }
+
+  @keyframes slideProfile {
+    from {top: -10000px;}
+    to {top: 0px;}
+  }
+
+  @keyframes fadeIn {
+    0% {opacity: 0; visibility:visible;}
+    100% {opacity: 1; visibility:visible;}
+ }

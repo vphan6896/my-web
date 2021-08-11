@@ -5,8 +5,6 @@ import Projects from "../Projects/Projects"
 
 
 function Routing() {
-    //Have to make this a section to make gradient work everywhere. Else would have to assign class to the route component in app.js
-    //Then for every component, need to repeat the class
     return (
         <div className="container">
             <Switch>
