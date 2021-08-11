@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Write up files from MS Word
+~$riteup.docx
+writeup.docx
+*.tmp
+*.docx
