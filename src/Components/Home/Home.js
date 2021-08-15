@@ -26,7 +26,13 @@ function Home() {
   var imageStyle = {
     "marginTop": "0px",
     "marginLeft": "0px",
-    "marginRight": "0px"
+    "marginRight": "0px",
+    "marginBottom": "0px"
+  }
+
+  var profilePicStyle = {
+    width: "70%",
+    height: "100%"
   }
 
 
@@ -34,7 +40,7 @@ function Home() {
       <div>
           <div className="hero">
             <div className="hero-body">
-              <h1 className="title has-text-white is-1 intro">
+              <h1 className="title has-text-grey-darker is-1 intro">
                 {greeting}
               </h1>
               <img id="GreetingID" className="intro" alt="sun shining on water" style={imageStyle} src={gifOfTime}></img>
@@ -44,7 +50,7 @@ function Home() {
 
         <div className={"columns profile"}>
           <div className="column">
-            <img alt="Vy Phan's front"  src={profile_picture}/>
+            <img style={profilePicStyle} alt="Vy Phan posing"  src={profile_picture}/>
           </div>
 
           <div className="column">
