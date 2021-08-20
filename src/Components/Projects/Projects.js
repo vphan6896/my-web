@@ -5,7 +5,6 @@ import Abc from './Abc.js'
 import Card from '../Cards/Card'
 import dz_image from './dangerzone.png'
 import al_image from './Apex-Legends-Stats.png'
-import '../Home/Home.css'
 
 const routes = [
     { path: '/projects/pvd', name: 'Pvd', Component: Pvd },
@@ -33,6 +32,9 @@ function Projects() {
                             <h1 className="title has-text-grey-darker is-1">
                                 Projects
                             </h1>
+                            <h2 class="subtitle">
+                                Documentation of my projects. There may be a blog attached to them or links that will better describe the projects.
+                            </h2>
                         </section>
                         
                         <div className="columns section has-text-weight-medium">
