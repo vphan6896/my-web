@@ -1,34 +1,11 @@
 import profile_picture from './profile_picture-removebg.png';
-import sunny_anim from './sunny_joypixels.gif';
-import sunset_anim from './sunset.gif';
-import sunrise_anim from './sunrise.gif';
 import {Link} from 'react-router-dom';
 import linkedin_logo from './linkedin-logo-png-1840.png';
 import './Home.css';
+import Greeting from './Greeting'
 
 
 function Home() {
-  var dt = new Date();
-  var hour = dt.getHours();
-  var greeting = "";
-  var gifOfTime = sunny_anim;
-
-  if (hour < 12) {
-    greeting = "Good Morning"
-    gifOfTime = sunrise_anim;
-  } else if (hour >= 12 && hour < 17) {
-    greeting = "Good Afternoon"
-  } else {
-    greeting = "Good Evening"
-    gifOfTime = sunset_anim;
-  }
-
-  var imageStyle = {
-    "marginTop": "0px",
-    "marginLeft": "0px",
-    "marginRight": "0px",
-    "marginBottom": "0px"
-  }
 
   var profilePicStyle = {
     width: "70%",
@@ -37,22 +14,16 @@ function Home() {
 
 
   return (
-      <div>
-          <div className="hero">
-            <div className="hero-body">
-              <h1 className="title has-text-grey-darker is-1 intro">
-                {greeting}
-              </h1>
-              <img id="GreetingID" className="intro" alt="sun shining on water" style={imageStyle} src={gifOfTime}></img>
-            </div>
-          </div>
-        
+    //Home page has whitebox otherwise without this individual page. Otherwise the css background-size:cover covers the full page.
+      <div style={{"height":"100vh"}}>
+        <div>
+          <Greeting></Greeting>
+        </div>
 
-        <div className={"columns profile"}>
+        <div className="columns profile" style={{paddingTop:"100px"}}>
           <div className="column">
             <img style={profilePicStyle} alt="Vy Phan posing"  src={profile_picture}/>
           </div>
-
           <div className="column">
             <article className="message is-info is-size-3">
               <div className="message-header" >

@@ -27,7 +27,7 @@ function Projects() {
             ))}
             <Route exact path="/projects" exact render={ () => {
                 return(
-                    <div>
+                    <div style={{"height":"100vh"}}>
                         <section class="columns section hero">
                             <h1 className="title has-text-grey-darker is-1">
                                 Projects

@@ -12,7 +12,7 @@ function Routing() {
                 <Route path="/blogs" component={Blogs} />
                 <Route path="/my-web" component={Home} />
                 <Route exact path="/" component={Home} />
-                <Route path="*" ><h1 className="has-text-white title">This appears to be an invalid page.</h1></Route>
+                <Route path="*" ><h1 className="has-text-grey-darker title">This appears to be an invalid page.</h1></Route>
             </Switch>
         </div>
         
