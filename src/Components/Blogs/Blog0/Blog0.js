@@ -15,30 +15,36 @@ function Blog0() {
       "width":"450px"
     }
 
+    var blockTitle="has-text-weight-medium is-size-4";
+    var blockStyle="is-size-5 block"
+
     return (
         <div>
           <Blog title="Mechanical Keyboards" subtitle="and how I built my own"
           body={
           <div>
           <img style={headlineImage} src={kbd_gif} alt="Glowing keyboard showing outline of Lancelot"/> <img style={headlineImage} src={lancelot} alt="Lancelot from Fate Zero"/>
-          <h3 className="has-text-weight-medium is-size-4">TLDR</h3>
-          <ul>
+          <h3 className={blockTitle}>TLDR</h3>
+          <ul className="block">
             <li>1. Find switches I liked (quiet): Cherry MX Silent Red with Tealios Housing</li>
             <li>2. Find someone to make my custom keycaps: Maxkeyboards.com</li>
             <li>3. Find a case. Preferably hot-swappable so you can plug-n-play switches essentially.: GK96s from Epomaker</li>
             <li>3. Do some labor with switches. Then assemble.</li>
           </ul>
-          <h3 className="has-text-weight-medium is-size-4">What's the deal with mechanical keyboards?</h3>
           <div>
-            <p className="is-size-5">
+            <h3 className={blockTitle}>What's the deal with mechanical keyboards?</h3>
+            <p className={blockStyle}>
             Mechanical keyboards are not a new concept. You can look up on more history behind them but an example
             of an early mechanical keyboard would be the typewriter or the <a href="https://en.wikipedia.org/wiki/Model_M_keyboard">
             Model M Keyboard from IBM
             </a>. 
+            </p>
+            <p className={blockStyle}>
             In summary, mechanical keyboards offer the end-user what every mouse does: functionality with feedback. Ever notice your mouse clicks make that "clicky" sound?
             That was in-place partly to inform the user that your attempt to press down on the mouse was sufficient to trigger the mouse button. Basic physics but
             this is what keyboards do for us as well.
-            <br/><br/>
+            </p>
+            <p className={blockStyle}>
             If you get deeper into the keyboard hobby, you'll start to notice the finer details such as the sound profile of each keyboard. There may be keyboards with
             more <a href="https://youtu.be/HF0ZlqMe3rw?t=6"> distinct tappy sounds 
             </a> or maybe the <a href="https://youtu.be/x_VRaHneWto?t=99">sound of their clicky switches overwhelm the reverb of the switches</a>.
@@ -46,22 +52,26 @@ function Blog0() {
             which can be appreciated by everyone. Once you move past the ostentatious leds and their numerous settings, you can coordinate color schemes and even get 
             custom-made keycaps to bring some personality to your battlestation. <br/>
             <img style={bodyImage0} src={matcha} alt="soft shades of green colored keycaps"/> <img style={bodyImage0} src={keycap} alt="keycap with Mount Fuji model inside resin"/> 
-            
-            <h3 className="has-text-weight-medium is-size-4">So why build my own custom one?</h3>
+            </p>
+            <p className={blockStyle}>
+            <h3 className={blockTitle}>So why build my own custom one?</h3>
             I dislike membrane keyboards (what you see in offices and schools). It's debatable that they're almost as loud as a mechanical keyboard depending on a user's typing behavior.
             They are difficult to repair due to lack of support and sometimes keys get stuck or not register. When I was coding or typing an essay, pressing the left shift key
             on a Dell membrane keyboard was extremely hard. If I type a "abcdef" quickly, it would register as "acef". Failure to register keystrokes is called ghosting. 
             Good quality keyboards will try to implement anti-ghosting but nothing is perfect. Especially not a Dell keyboard built with low quality parts. 
-            <br/><br/> 
+            </p>
+            <p className={blockStyle}>
             Now, not all non-mechanical keyboards are bad. I am very comfortable typing on laptop keyboards Macs and
             Windows alike. Windows laptops have scissor switches which like other commercial non-mechanical keyboards are difficult to repair (My '-'' minus key is still broken
             on my laptop) and suffer ghosting as well. With less resistance than a membrane keyboard, laptop keyboards have a reactive, light stroke feeling to them which makes
             them comfortable for typing. Fair warning, if you even buy a keyboard from a large company like Logitech, appreciate it for a few years, somehow lost your 'e' key, 
             then it's possible your warranty expired or Logitech no longer has any spare parts to send to you (even if they did, you'll be expecting $5 for a single letter).
             Not to mention, replacing a scissor switch on a laptop is a lot harder than the mechanical keyboards' plug-n-play.
-            <br/> <br/>
+            </p>
+            <p className={blockStyle}>
             <a href="https://switchandclick.com/cherry-mx-guide/"> Guide to Cherry (most popular types of switches) switches</a>
-            <br/> <br/>
+            </p>
+            <p className={blockStyle}>
             My goal was to build a quiet linear keyboard with custom keycaps outlined in white for backlight capability as you can see at the top of the page. Linears eliminate
             sound from the mechanical switch. I've used Cherry MX reds before from a <a href="https://www.corsair.com/us/en/Categories/Products/Gaming-Keyboards/CORSAIR-Gaming-K70-Mechanical-Gaming-Keyboard-%E2%80%94-CHERRY%C2%AE-MX-Red/p/CH-9000069-NA">
             Corsair K70 </a>. They're light to press on but still make a significant sound when typing. A quick google search showed there were Cherry MX Silent Red switches 
