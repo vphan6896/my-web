@@ -3,6 +3,7 @@ import {Link, Switch, Route} from "react-router-dom";
 import blog0 from './Blog0/Blog0.js'
 import blog1 from './Blog1/Blog1.js'
 import kbd_gif from './keyboard.gif'
+import pi_logo from './Blog1/Pi-hole_logo.png'
 
 const routes = [
   { path: '/blogs/blog0', name: 'blog0', Component: blog0 },
@@ -36,11 +37,11 @@ function Blogs() {
                     headliner={<Link to='/blogs/blog0' > Mechanical Keyboards </Link>}
                     descrip={<div>Why are there hobbyists who collect and build keyboards? Isn't my Apple
                     <br></br><br></br><br></br>
-                    <a>#software</a></div>}
+                    <a>#technology</a></div>}
                 />
-                <Card image={<Link to='/blogs/blog1' ><img src={kbd_gif} alt="Keyboard glowing"/></Link>}
-                    headliner={<Link to='/blogs/blog1' > Mechanical Keyboards </Link>}
-                    descrip={<div>Why are there hobbyists who collect and build keyboards? Isn't my Apple
+                <Card image={<Link to='/blogs/blog1' ><img src={pi_logo} alt="Raspberry Pi and Docker logos on top of a No Ads sign"/></Link>}
+                    headliner={<Link to='/blogs/blog1' > Pi-hole </Link>}
+                    descrip={<div>Ad blocking on the network level. Experimenting with Docker and a Raspberry Pi.
                     <br></br><br></br><br></br>
                     <a>#software</a></div>}
                 />

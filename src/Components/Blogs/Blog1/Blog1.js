@@ -1,15 +1,16 @@
-import Blog from '../../Blog/Blog.js'
-
+import pi_logo from './Pi-hole_logo.png'
+import Blog from '../../Blog/Blog'
 
 function Blog1() {
+
     var headlineImage = {
-      "height":"200px",
-      "width":"400px",
-      "marginBottom":"10px"
-    }
+        "height":"200px",
+        "width":"400px",
+        "marginBottom":"10px"
+      }
     var bodyImage0 = {
-      "height":"300px",
-      "width":"450px"
+    "height":"300px",
+    "width":"450px"
     }
 
     return (
@@ -17,6 +18,7 @@ function Blog1() {
           <Blog title="Mechanical Keyboards" subtitle="and how I built my own"
           body={
           <div>
+           <img style={headlineImage} src={pi_logo} alt="Raspberry Pi and Docker logos on top of a No Ads sign"/>
           <h3 className="has-text-weight-medium is-size-4">TLDR</h3>
           <ul>
             <li>1. Find switches I liked (quiet): Cherry MX Silent Red with Tealios Housing</li>
