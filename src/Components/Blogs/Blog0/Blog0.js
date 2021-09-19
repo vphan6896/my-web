@@ -1,8 +1,12 @@
 import Blog from '../../Blog/Blog.js'
+import BlogCredit from '../BlogCredit.js'
 import kbd_gif from '../keyboard.gif'
 import lancelot from './lancelot.png'
 import keycap from './dropmtfujikeycap.png'
 import matcha from './matchakeycaps.png'
+import design from './wipDesigning.png'
+import keychron from './keychronc2.jpg'
+import foam from './foam.jpg'
 
 function Blog0() {
     var headlineImage = {
@@ -81,20 +85,116 @@ function Blog0() {
             This housing would provide a more firm and solid feel than that of the Cherry's which can further dampen any unwanted sound. One flaw with this frankenswitch is
             paying for twice the amount of switches and the labor to swap the parts out. It's not a difficult thing to do, but it is tedious.
             </p>
-          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <p className={blockStyle}>
+            <h3 className={blockTitle}>Switches. Okay, what about them fancy engraved keycaps?</h3>
+            Although I memorized the ANSI keyboard layout (This isn't impressive.) and can tell which key is which with my eyes closed, I wanted to leave the legend on the side 
+            for less experienced typists using my computer. This would also prevent the legend from distracting the viewer from the keycap artwork. Now begins the search for 
+            a manufacturer.
+            I've done lots of Googling to find a place that would do custom keycaps. I've checked solutionsinplastic.com who does injection molding and other custom
+            buttons for machinery (ones you would find in a factory). They don't do computer keyboards. Lots of Reddit posts point you in the direction of customization
+             in the form of mix-matching different colored keycaps. <a href="https://pimpmykeyboard.com/"> Link here if interested </a> Which is great in itself but isn't the 
+            backlit keycaps I envisioned. Finally, I found wasdkeyboards.com and maxkeyboards.com. Wasdkeyboards wasn't as upfront about their custom keycap options, so maxkeyboards
+            received more of my traffic. Additionally, maxkeyboards had an <a href="https://www.instagram.com/maxkeyboards/">Instagram</a> showing their past work.
+            </p>
+
+            <p className={blockStyle}>
+            <h3 className={blockTitle}>Designing the files for the vendor</h3>
+            Maxkeyboards ordering system for custom keycaps is direct contact with their email support. I tried to be self-sufficient by downloading their keycaps template
+            files and working my image onto the keycaps on Inkscape. I had no prior experience working with vector graphics but did understand the concept of layers in art
+            from previous tinkering with other art tools long ago. The magic of the internet provided a video with the exact instructions on imprinting an image onto keycaps:
+            <a href="https://www.youtube.com/watch?v=d3XuDNFCfWg&ab_channel=TheWiggin"> Here.</a> Even with the video, there was still some struggling through the layers, resizing
+            images, and multi-selection before clipping was successful. All there was to do was to email the files, complete transaction and carry on.
+            </p>
+            <img className={bodyImage0} src={design} alt="Screenshot of Inkscape UI with keycaps template" />
+
+            <p className={blockStyle}>
+            <h3 className={blockTitle}>Looking for a Case</h3>
+            Upfront, I wanted a full keyboard. Numpad and function keys. Oftentimes, many mechanical keyboard enthusiasts' keyboards are TKL (without numpads) or a 60% form.
+            They seem to have prejudice against numpads. But in my use case, I use it for extra mappings in video games, simple arithmetic and the occasional pin number entry.
+            Not to mention alt+codes that generate special characters such as smiley face ☺, em dash — and en dash – were essential for internet banter and fun. You cannot 
+            do this with the number row key.
+            </p>
+            <p className={blockStyle}>
+            In addition to the difficulty of acquiring a full-sized mechanical keyboard case is being hot-swappable. I have soldering equipment and can solder (experience
+            from working on video game consoles), but did not want to spend hours potentially messing up the keyboard PCB when soldering switches in. Last but not least,
+            there had to be backlight. (How else will my engraved keycaps truly shine?) My search came across the <a href="https://www.keychron.com/products/keychron-c2-wired-mechanical-keyboard?variant=32294075170905]">
+            Keychron C2</a>. This keyboard worked well but was difficult to pry open and had gaps between the function row keys. The gaps between the function row keys
+            ruined the keycap artwork unity.
+            </p>
+            <img className={bodyImage0} src={keychron} alt="Keychron C2 keyboard with custom keycaps"/>
+            <p className={blockStyle}>
+            More to review on the keycaps I designed and received... It is a bit difficult to discern the foreground and background, and the backlight was not customizable and was only white.
+            I did add foam to the Keychron C2 thanks to my sore fingers, this <a href="https://www.reddit.com/r/Keychron/comments/liv7ek/free_keychron_c2_foam_mod/">
+              Reddit post</a>, and lots of spudging tools. This immensely reduced the reverb from typing. All there's left is to find another keyboard that better fit 
+            my keycaps artwork which brings me to more Googling: <a href="https://epomaker.com/products/gk96s">the GK96s</a>. Here is a 
+            <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/kws5w2/epomaker_gk96ls_reviewish/"> review</a>. The TLDR: it's only 96%, but is hot-swappable.
+            Bonuses are its bluetooth capability and key remapping (the scroll lock key can become delete).
+            </p>
+            
+            <p className={blockStyle}>
+            <h3 className={blockTitle}>Putting it altogether.</h3>
+            I know the blog is a bit out of order, but bear with me. Assume my frankenswitches, custom keycaps (obviously), GK96s, and any modding tools have arrived. You will
+            want a switch puller, keycap puller (2-in-1's work okay), and a screwdriver at the very least for any mechanical keyboard. The switches were already lubed but for that
+            extra sound dampening, I filmed the alphanumeric keys with Deskeys foam switch films. Here is a video of someone else's experiment:
+             <a href="https://www.youtube.com/watch?v=kiD5FCWZloE&ab_channel=Histy"> video</a>. The GK96s was easy to disassemble due to its reliance on screws instead of snap-on tabs.
+            After opening it, I added foam:
+            </p>
+            <img className={bodyImage0} src={foam} alt="Keyboard case with foam in it"/>
+            <p className={blockStyle}>
+            Then, there is a bane of all keyboard enthusiasts: stabilizer keys. If you think I'm being extra... Here is a video of rattly stabilizers vs good stabilizers:
+            <a href="https://www.youtube.com/watch?v=r56Nsit_4G0&ab_channel=Hitchyy"> Bad</a> | <a href="https://www.youtube.com/watch?v=zQBxG4TWP8w&ab_channel=SSSAK">Good. (Watch the first 10 seconds only)</a> Stabilizer keys are the larger keys such as the Enter key or the spacebar. Hopefully, stabilizers 
+            are a self-explanatory term. If you didn't have on on your space bar, the space bar would act like a see-saw/teeter-totter instead of pressing down uniformly. Stabilizers
+            with their many potential areas of noise are tedious to mod. Lubing the stabilizer wires 
+            </p>
+
+            <p className={blockStyle}>
+            What's left is messing with the GK96 software. Let me tell you, it's not easy. After 3 hours of tinkering, I found the most consistent way was to make edits to the
+            custom lighting profile, save it, open the profiles page switch from an arbitrary one, flash to the firmware, then switch to the custom one, and finally flash it.
+            Reminder to add photos later on this section. Also, you cannot overwrite the default keyboard profile for its mappings. You will always have to load your keyboard profile
+            if you wanted to have your scroll lock key as delete key.
+            </p>
+
+            <p className={blockStyle}>
+            <h3 className={blockTitle}>Conclusion</h3>
+            Please refer to the top of the page for what the keyboard
+            looks like. Now, I don't have good equipment for recording a nearly silent keyboard, but here is a video of someone else's exact frankenswitches:
+            <a href="https://www.youtube.com/watch?v=ypi14DazBqw"> Mx Zilent Sound Test</a>. Look up any other keyboard sound test while keeping the same volume on your
+            computer and you will quickly notice there is a vast difference in sound amplitudes. I assure you, it isn't majorly the recording equipment differences. The
+            MX Zilents are just that silent. More silent than regular membrane keyboards and more silent than laptop keyboards.
+            </p>
+            <p className={blockStyle}>
+            I hope my journey into custom mechanical keyboards has been informative or serve well as a documentation for my future self to reflect on.
+            Although I spent too much money (especially on the custom keycaps) on what one could argue as unnecessary features, the learning process has been insightful. 
+            It's easy to dismiss other people's hobbies when you're ignorant of the finer details, but I chose to investigate it and come out with a 
+            product for myself. Don't use my experience as the average. A nice mechanical keyboard can be as cheap as $20 with thoughtful modding and using materials around the house
+            (packaging foam, t-shirts, screw drivers, etc.) Don't let enthusiasts and their jargon scare you. Find what you like, and set forth to realize your goals.
+            I can tell you having created a literal one-of-a-kind in the entire world keyboard made almost exactly to my exact 
+            specifications has brought me great satisfaction and I still enjoy the nearly absolute silent keyboard for my everyday use. There will be a later blog on
+            how I eliminated the mouse click sounds ☺.
+            </p>
+            
+          <br/><br/><br/><br/><br/>
           </div>
           <hr style={{"border-top":"2px solid black"}}/>
           </div>
           }
           
           credits={
-          <ul>
-            <li>https://www.tomshardware.com/picturestory/736-history-of-mechanical-keyboards.html</li>
-            <li>https://switchandclick.com/cherry-mx-guide/</li>
-            <li>https://drop.com/buy/gks-xda-v2-dye-subbed-pbt-matcha-keycap-set</li>
-            <li>https://drop.com/buy/bkd-mt-fuji-wood-resin-artisan-keycap</li>
-          </ul>}
-          
+            <ul>
+              <BlogCredit url="https://www.tomshardware.com/picturestory/736-history-of-mechanical-keyboards.html"/>
+              <BlogCredit url="https://switchandclick.com/cherry-mx-guide/"/>
+              <BlogCredit url="https://drop.com/buy/gks-xda-v2-dye-subbed-pbt-matcha-keycap-set"/>
+              <BlogCredit url="https://drop.com/buy/bkd-mt-fuji-wood-resin-artisan-keycap"/>
+              <BlogCredit url="https://www.etsy.com/shop/DecentKeyboards"/>
+              <BlogCredit url="https://pimpmykeyboard.com/"/>
+              <BlogCredit url="https://www.reddit.com/r/MechanicalKeyboards/comments/51qepc/where_can_i_buy_custom_keycaps/"/>
+              <BlogCredit url="https://www.wasdkeyboards.com/"/>
+              <BlogCredit url="https://www.maxkeyboard.com/"/>
+              <BlogCredit url="https://www.instagram.com/maxkeyboards/"/>
+              <BlogCredit url="https://www.youtube.com/watch?v=d3XuDNFCfWg&ab_channel=TheWiggin"/>
+              <BlogCredit url="https://www.reddit.com/r/Keychron/comments/liv7ek/free_keychron_c2_foam_mod/"/>
+            </ul>
+          }
           />
         </div>
     )
