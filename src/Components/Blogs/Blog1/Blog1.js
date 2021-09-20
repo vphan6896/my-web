@@ -15,7 +15,7 @@ function Blog1() {
 
     var blockTitle="has-text-weight-medium is-size-4";
     var blockStyle="is-size-5 block";
-
+d
     return (
         <div>
           <Blog title="Pi-Holes" subtitle="on a 2008 laptop, Docker, then an actual Raspberry Pi"
