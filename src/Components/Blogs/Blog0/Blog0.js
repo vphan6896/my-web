@@ -7,6 +7,8 @@ import matcha from './matchakeycaps.png'
 import design from './wipDesigning.png'
 import keychron from './keychronc2.jpg'
 import foam from './foam.jpg'
+import le1 from './le1.png'
+import le2 from './le2.png'
 
 function Blog0() {
     var headlineImage = {
@@ -150,12 +152,14 @@ function Blog0() {
             <p className={blockStyle}>
             What's left is messing with the GK96 software. Let me tell you, it's not easy. After 3 hours of tinkering, I found the most consistent way was to make edits to the
             custom lighting profile, save it, open the profiles page switch from an arbitrary one, save and apply, then switch to the custom one before saving and applying for the final time.
-            To add to the confusion, the keyboard has a set of layers (depicting light effects and mappings) and a set of light effect profiles. To change light effect profile (default -> our custom one)
+            To add to the confusion, the keyboard has a set of layers (affecting light effects and mappings) and a set of light effect profiles. To change light effect profile (default -> our custom one)
             for this keyboard, press fn+(-).
             To turn it on, press fn+(9). Unplugging this device will not turn it off, it will go into Bluetooth mode. To turn it off completely, hold fn+` until all lights are off.
             Also, you cannot overwrite the default keyboard profile for its mappings. You will always have to load your keyboard profile
             if you wanted to have your scroll lock key as delete key.
             </p>
+            <img className={headlineImage} src={le1} alt="GK96 software showing custom lighting profile settings"/>
+            <img className={headlineImage} src={le2} alt="GK96 software showing custom lighting profiles and layers"/>
 
             <p className={blockStyle}>
             <h3 className={blockTitle}>Conclusion</h3>
