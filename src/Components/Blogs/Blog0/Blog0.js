@@ -152,7 +152,7 @@ function Blog0() {
             <p className={blockStyle}>
             What's left is messing with the GK96 software. Let me tell you, it's not easy. After 3 hours of tinkering, I found the most consistent way was to make edits to the
             custom lighting profile, save it, open the profiles page switch from an arbitrary one, save and apply, then switch to the custom one before saving and applying for the final time.
-            To add to the confusion, the keyboard has a set of layers (affecting light effects and mappings) and a set of light effect profiles. To change light effect profile (default -> our custom one)
+            To add to the confusion, the keyboard has a set of layers (affecting light effects and mappings) and a set of light effect profiles. To change light effect profile (default {"->"} our custom one)
             for this keyboard, press fn+(-).
             To turn it on, press fn+(9). Unplugging this device will not turn it off, it will go into Bluetooth mode. To turn it off completely, hold fn+` until all lights are off.
             Also, you cannot overwrite the default keyboard profile for its mappings. You will always have to load your keyboard profile
