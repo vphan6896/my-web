@@ -58,7 +58,8 @@ function Blog1() {
             <p className={blockStyle}>
               At the time I was working with this laptop, I did not want to spend the money to buy an actual Raspberry Pi. Unfortunately, I do not have all the details
                of when I tried messing with Virtual Machines to deploy Pi-Hole. All I remember is that it was difficult to expose the virtual machine's IP address to 
-               the home network devices. That alone stops you from using the Pi-Hole's IP Address as your DNS server and defeats the whole purpose. Because this laptop
+               the home network devices (Bridged or host-only Networking is what you would look for to expose the VM's IP to your home network).
+                That alone stops you from using the Pi-Hole's IP Address as your DNS server and defeats the whole purpose. Because this laptop
                 is not Linux-based, I had to resort to deploying pi-hole through Docker. There were some roadblocks on installing Docker. The newest Docker application
                 was not compatible with the Samsung laptop's OS so Docker Toolbox had to be installed. The process to running commands to install Pi-Hole is simple, so
                 that will be skipped. The result was Pi-Hole running and the container could ping Google and my other local devices. However, I could not access the 
@@ -75,9 +76,41 @@ function Blog1() {
               Hyper-V and other virtualization Windows settings to be disabled. As of 2020, BlueStacks does have a new emulator that can run with Hyper-V, but
               in my experience, I still ran into errors having Docker and BlueStacks up. I took a pause at this time to mull over my Pi-hole deployment and use 
               case. I would have to keep my hefty gaming computer up all day to keep pi-hole running for my other devices to benefit from... This is when I 
-              caved in and bought a used Raspberry Pi on Ebay (Be environmental and cheap!).
+              caved in and bought a used Raspberry Pi 4 on Ebay (Be environmental and cheap!).
             </p>
 
+            <h3 className="has-text-weight-medium is-size-4">π Time</h3>
+            <p className={blockStyle}>
+              Installing the Raspberry Pi OS was a breeze. I used BalenaEtcher to burn the OS image onto a microSD card which promptly went into the Pi.
+              While using a Windows computer, remember to create an empty file called 'ssh' with no file extensions and place that file onto the root of the microSD
+              card to enable ssh on your Pi. To skip setting up internet connection, I plugged an ethernet cable into the Pi and one of my keyboards compatible with
+              Linux distributions. The rest of the steps can easily be followed on <a href="https://docs.pi-hole.net/main/basic-install/">Pi-Hole's website</a>.
+              <p className="has-text-weight-semibold"> Don't forget to change your Pi's default password for security purposes!</p>
+            </p>
+
+            <p className={blockStyle}>
+              My configuration has a web console for better visibility on ads being blocked per device. It also allowed me to
+              whitelist false-positives and add additional blocklists that others have curated (Just look for Pi Hole Adlists on GitHub!) But like installing 
+              multiple anti-viruses on one computer (Couldn't be me), too many adlists can restrict your computer's access to the internet. As for the whole experience,
+              Setting up a Pi-Hole may be considered easy, but attempting to host the Pi-hole on multiple platforms was several hours of effort split between a few days.
+              Aside, but it reminds me of the time my security professor assigned us a simple homework of sshing into the school network while binding our local port
+              to the computer's open port while minding the firewall that exists. Ultimately easy, but still required an hour of work if you didn't think about what
+              you were doing.
+            </p>
+
+            <h3 className="has-text-weight-medium is-size-4">What's left?</h3>
+            <p className={blockStyle}>
+              Some ads still made it through. Like I mentioned earlier in the blog, some ad providers can still make it through due to their source server effectively being
+              the same as the content an internet user would generally view (e.g. Youtube videos and ads being served by Google servers). The Pi-hole definitely improved my
+               non-computer devices such as mobile phone experiences when browsing. Unfortunately, I found out the hard way that my Pi-Hole image corrupts when it shuts down
+               abruptly. This usually happened in thunderstorms causing blackouts despite being connected to a surge protector with a built-in power supply and would continue
+               to cost me 2 microSD cards so far. I tried to revive my microSD cards with multiple 3rd party Windows softwares then resorted to Linux formatting and 
+               miscellaneous Linux tools. Supposedly, microSD cards are easy to corrupt especially when writing is occurring. The root cause is still ambiguous as 
+               it could be my used Pi may be dysfunctional or that my multiple new microSD cards 
+               were of inferior quality. There is a list of 'good' and 'bad' microSD cards for Pi's <a href="https://elinux.org/RPi_SD_cards">here</a> with users' anecdotes.
+               Overall, this has been a great experience to reduce the already excessive amount of ads found when browsing. Things to improve on would be to look into
+               creating an at-home VPN to augment ad-blocking and avoid as much of internet tracking and profiling as I can and to create a more stable Pi-Hole.
+            </p>
 
           </div>
           
@@ -91,12 +124,16 @@ function Blog1() {
             <BlogCredit url="https://en.wikipedia.org/wiki/Pi-hole"/>
             <BlogCredit url="https://www.youtube.com/watch?v=wkzIkdcd6wk"/>
             <p>
-              Note on the video above: the dockerfile the author provides should have both dns entries pointing to localhost 127.0.0.1.
+              Note on the video above: the DockerFile the author provides should have both dns entries pointing to localhost 127.0.0.1.
               Secondary and tertiary DNS server configurations <br/> on a computer will be used even if the primary DNS server works.
               Counter-intuitively, DNS configurations do not fail a DNS server and try the next one you listed.<br/> All 2 or 3 DNS servers 
-              will be used in no particular order.
+              will be used in no particular order. If I remember correctly, there was an issue of the Pi-hole querying and logging twice
+              if you list the same DNS twice in the Dockerfile.
             </p>
             <BlogCredit url="https://support.bluestacks.com/hc/en-us/articles/360055244412-How-to-disable-Hyper-V-on-Windows-for-BlueStacks-5"/>
+            <BlogCredit url="https://discourse.pi-hole.net/t/how-do-i-set-or-reset-the-web-interface-password/1328"/>
+            <BlogCredit url="https://www.reddit.com/r/pihole/comments/9wy6dq/google_ads_are_bypassing_pihole_by_being_served/"/>
+            <BlogCredit url="https://raspberrypi.stackexchange.com/questions/7978/how-can-i-prevent-my-pis-sd-card-from-getting-corrupted-so-often"/>
           </ul>
           }
           
