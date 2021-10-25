@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-web/static/css/main.1a867870.chunk.css",
-    "main.js": "/my-web/static/js/main.18c2da30.chunk.js",
-    "main.js.map": "/my-web/static/js/main.18c2da30.chunk.js.map",
+    "main.js": "/my-web/static/js/main.257bde37.chunk.js",
+    "main.js.map": "/my-web/static/js/main.257bde37.chunk.js.map",
     "runtime-main.js": "/my-web/static/js/runtime-main.413efdf6.js",
     "runtime-main.js.map": "/my-web/static/js/runtime-main.413efdf6.js.map",
     "static/css/2.b6652032.chunk.css": "/my-web/static/css/2.b6652032.chunk.css",
@@ -27,6 +27,7 @@
     "static/media/linkedin-logo-png-1840.a1932ea6.png": "/my-web/static/media/linkedin-logo-png-1840.a1932ea6.png",
     "static/media/matchakeycaps.285d271b.png": "/my-web/static/media/matchakeycaps.285d271b.png",
     "static/media/phonevideodoctor.f8b023ed.png": "/my-web/static/media/phonevideodoctor.f8b023ed.png",
+    "static/media/pi_4.dbb9d1aa.jpg": "/my-web/static/media/pi_4.dbb9d1aa.jpg",
     "static/media/profile_picture-removebg.c121ad99.png": "/my-web/static/media/profile_picture-removebg.c121ad99.png",
     "static/media/sunny_joypixels.3e70a111.gif": "/my-web/static/media/sunny_joypixels.3e70a111.gif",
     "static/media/sunrise.ea5b2b2b.gif": "/my-web/static/media/sunrise.ea5b2b2b.gif",
@@ -38,6 +39,6 @@
     "static/css/2.b6652032.chunk.css",
     "static/js/2.359dca05.chunk.js",
     "static/css/main.1a867870.chunk.css",
-    "static/js/main.18c2da30.chunk.js"
+    "static/js/main.257bde37.chunk.js"
   ]
 }
