@@ -1,6 +1,7 @@
 import pi_logo from './Pi-hole_logo.png'
 import Blog from '../../Blog/Blog'
 import BlogCredit from '../BlogCredit';
+import pi_4 from './pi_4.jpg'
 
 function Blog1() {
 
@@ -11,7 +12,7 @@ function Blog1() {
     }
     var bodyImage0 = {
         "height":"300px",
-        "width":"450px"
+        "width":"300px"
     }
 
     var blockStyle="is-size-5 block";
@@ -88,6 +89,7 @@ function Blog1() {
               <p className="has-text-weight-semibold"> Don't forget to change your Pi's default password for security purposes!</p>
             </p>
 
+            <img className={bodyImage0} src={pi_4} alt="Red and white case enclosing a Raspberry Pi with hdmi, power, ethernet, and usb cables plugged"/>
             <p className={blockStyle}>
               My configuration has a web console for better visibility on ads being blocked per device. It also allowed me to
               whitelist false-positives and add additional blocklists that others have curated (Just look for Pi Hole Adlists on GitHub!) But like installing 
