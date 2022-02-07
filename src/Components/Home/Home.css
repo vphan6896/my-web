@@ -1,4 +1,7 @@
-
+@media screen and (min-width: 1024px) {
+  html, body{overflow:hidden;
+    height:"100vh";}
+}
   .greeting {
     overflow: display;
     position: relative;

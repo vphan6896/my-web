@@ -14,7 +14,7 @@ class Navbar extends Component {
     }
     
     return (
-        <nav className="navbar is-black" role="navigation" aria-label="main navigation">
+        <nav className="navbar is-black is-hidden-mobile" role="navigation" aria-label="main navigation">
         <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-start has-text-weight-semibold">
 

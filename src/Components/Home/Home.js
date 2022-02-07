@@ -1,14 +1,16 @@
 import profile_picture from './profile_picture-removebg.png';
 import {Link} from 'react-router-dom';
 import linkedin_logo from './linkedin-logo-png-1840.png';
+import github_logo from './github-logo.png'
 import './Home.css';
 import Greeting from './Greeting'
+import Resume from './Vy_Phan.pdf'
 
 
 function Home() {
 
   var profilePicStyle = {
-    width: "70%",
+    width: "80%",
     height: "100%"
   }
 
@@ -30,34 +32,41 @@ function Home() {
                 Vy Phan
               </div>
               
-              <div className="message-body is-size-3 has-text-weight-medium">
-                <ul className="has-text-left">
-                  <li className="mb-2">
-                    <a href="resume">Resume</a>
+              <div className="message-body">
+                Welcome to my site. I am a University of Texas Austin Computer Science B.S. Graduate interested in fullstack development.
+                <br/>
+                
+              </div>
+              
+            </article>
+            <article className="message is-info is-size-4 has-text-weight-medium">
+              
+              <div className="is-size-3 has-text-weight-medium">
+                <ul className="has-text-centered">
+                  <li>
+                    <a href={Resume} without rel="noreferrer" target="_blank">Resume</a>
                   </li>
                   <li>
                     <a href="https://www.linkedin.com/in/vy-phan-ut2020/" > <img alt="LinkedIn logo" style={{height:"45px", width:"160px"}} src={linkedin_logo}/>  </a>
                   </li>
-                  <li className="mb-1">
-                  <Link to="/blog">
-                    Blog
-                  </Link>
+                  <li>
+                    <a href="https://github.com/vphan6896/" > <img alt="GitHub logo" style={{height:"31px", width:"140px"}} src={github_logo}/>  </a>
                   </li>
                   <li>
-                  <Link to="/projects">
-                    Projects
-                  </Link>
+                    <Link to="/projects">
+                      Projects
+                    </Link>
+                  <li className="mb-1">
+                    <Link to="/blog">
+                      Blog
+                    </Link>
+                  </li>
                   </li>
                 </ul>
               </div>
             </article>
-            <article className=" message is-info is-size-4 has-text-weight-medium">
-              <div className="message-body">
-                Welcome to my site. I am a University of Texas Austin Computer Science B.S. Graduate with a certificate in Applied Statistics.
-              </div>
-            </article>
           </div>
-
+          
         </div>
                 
         

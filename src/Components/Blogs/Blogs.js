@@ -35,15 +35,15 @@ function Blogs() {
               <div className="columns section has-text-weight-medium">
                 <Card image={<Link to='/blogs/blog0' ><img src={kbd_gif} alt="Keyboard glowing"/></Link>}
                     headliner={<Link to='/blogs/blog0' > Mechanical Keyboards </Link>}
-                    descrip={<div>Why are there hobbyists who collect and build keyboards? Isn't my Apple
+                    descrip={<div>Why are there hobbyists who collect and build keyboards? Isn't my Apple Keyboard..
                     <br></br><br></br><br></br>
-                    <a>#technology</a></div>}
+                    <button class="button is-link">#technology</button></div>}
                 />
                 <Card image={<Link to='/blogs/blog1' ><img src={pi_logo} alt="Raspberry Pi and Docker logos on top of a No Ads sign"/></Link>}
                     headliner={<Link to='/blogs/blog1' > Pi-hole </Link>}
                     descrip={<div>Ad blocking on the network level. Experimenting with Docker and a Raspberry Pi.
                     <br></br><br></br><br></br>
-                    <a>#software</a></div>}
+                    <button class="button is-link">#software</button></div>}
                 />
               </div>
             </div>

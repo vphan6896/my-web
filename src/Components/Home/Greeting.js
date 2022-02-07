@@ -55,7 +55,7 @@ class Greeting extends Component {
         }
 
         return(
-        <div>
+        <div className="is-flex-desktop-only">
             {this.state.show ? 
             <div className="hero">
                 <div className="hero-body">
