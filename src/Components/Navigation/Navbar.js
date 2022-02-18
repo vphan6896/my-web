@@ -30,7 +30,7 @@ class Navbar extends Component {
             Projects
           </Link>
 
-          <p>Version 2-17-2022 1</p>
+          <p>Version 2-17-2022 0</p>
         </div>
         <div className="navbar-end has-text-weight-semibold">
           <p className="navbar-item">
