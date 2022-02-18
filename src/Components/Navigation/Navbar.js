@@ -29,6 +29,8 @@ class Navbar extends Component {
           <Link className="navbar-item" to="/projects">
             Projects
           </Link>
+
+          <p>Version 2-17-2022</p>
         </div>
         <div className="navbar-end has-text-weight-semibold">
           <p className="navbar-item">
