@@ -17,7 +17,7 @@ function Home() {
 
   return (
     //Home page has whitebox otherwise without this individual page. Otherwise the css background-size:cover covers the full page.
-      <div style={{"height":"100vh"}}>
+      <div style={{"height":"100vh","overflow":"hidden"}}>
         <div>
           <Greeting></Greeting>
         </div>

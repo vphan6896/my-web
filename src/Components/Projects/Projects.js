@@ -12,7 +12,7 @@ const routes = [
   ]
 
 function Projects() {
-    var { path, url } = useRouteMatch();
+    //var { path, url } = useRouteMatch();
     //Need to make that first route scale with multiple projects, else we have to make multiple routes
     //Need unique key when doing a list map.
     return (
