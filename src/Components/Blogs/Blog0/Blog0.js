@@ -1,5 +1,5 @@
 import Blog from '../../Blog/Blog.js'
-import BlogCredit from '../BlogCredit.js'
+import BlogCredit from '../../Blog/BlogCredit.js'
 import kbd_gif from '../keyboard.gif'
 import lancelot from './lancelot.png'
 import keycap from './dropmtfujikeycap.png'

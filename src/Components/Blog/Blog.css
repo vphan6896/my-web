@@ -1,0 +1,17 @@
+:root {
+    --headline-height: 200px;
+    --headline-width: 400px;
+    --body-height: 300px;
+    --body-width: 300px;
+  }
+
+
+  .headlineImage {
+    height: var(--headline-height);
+    width: var(--headline-width);
+  }
+
+  .bodyImage {
+    height: var(--body-height);
+    width: var(--body-width);
+  }

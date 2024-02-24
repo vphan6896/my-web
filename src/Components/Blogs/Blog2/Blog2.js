@@ -1,19 +1,8 @@
-import pi_logo from './Pi-hole_logo.png'
 import Blog from '../../Blog/Blog'
 import BlogCredit from '../../Blog/BlogCredit';
-import pi_4 from './pi_4.jpg'
+import '../../Blog/Blog.css'
 
-function Blog1() {
-
-    var headlineImage = {
-        "height":"200px",
-        "width":"400px",
-        "marginBottom":"10px"
-    }
-    var bodyImage0 = {
-        "height":"300px",
-        "width":"300px"
-    }
+function Blog2() {
 
     var blockStyle="is-size-5 block";
 
@@ -89,7 +78,7 @@ function Blog1() {
               <p className="has-text-weight-semibold"> Don't forget to change your Pi's default password for security purposes!</p>
             </p>
 
-            <img className={bodyImage0} src={pi_4} alt="Red and white case enclosing a Raspberry Pi with hdmi, power, ethernet, and usb cables plugged"/>
+            <img className={bodyImage} src={pi_4} alt="Red and white case enclosing a Raspberry Pi with hdmi, power, ethernet, and usb cables plugged"/>
             <p className={blockStyle}>
               My configuration has a web console for better visibility on ads being blocked per device. It also allowed me to
               whitelist false-positives and add additional blocklists that others have curated (Just look for Pi Hole Adlists on GitHub!) But like installing 
@@ -125,17 +114,6 @@ function Blog1() {
           <ul>
             <BlogCredit url="https://en.wikipedia.org/wiki/Pi-hole"/>
             <BlogCredit url="https://www.youtube.com/watch?v=wkzIkdcd6wk"/>
-            <p>
-              Note on the video above: the DockerFile the author provides should have both dns entries pointing to localhost 127.0.0.1.
-              Secondary and tertiary DNS server configurations <br/> on a computer will be used even if the primary DNS server works.
-              Counter-intuitively, DNS configurations do not fail a DNS server and try the next one you listed.<br/> All 2 or 3 DNS servers 
-              will be used in no particular order. If I remember correctly, there was an issue of the Pi-hole querying and logging twice
-              if you list the same DNS twice in the Dockerfile.
-            </p>
-            <BlogCredit url="https://support.bluestacks.com/hc/en-us/articles/360055244412-How-to-disable-Hyper-V-on-Windows-for-BlueStacks-5"/>
-            <BlogCredit url="https://discourse.pi-hole.net/t/how-do-i-set-or-reset-the-web-interface-password/1328"/>
-            <BlogCredit url="https://www.reddit.com/r/pihole/comments/9wy6dq/google_ads_are_bypassing_pihole_by_being_served/"/>
-            <BlogCredit url="https://raspberrypi.stackexchange.com/questions/7978/how-can-i-prevent-my-pis-sd-card-from-getting-corrupted-so-often"/>
           </ul>
           }
           
@@ -144,4 +122,4 @@ function Blog1() {
     )
 }
 
-export default Blog1;
+export default Blog2;

@@ -2,12 +2,14 @@ import Card from '../Cards/Card';
 import {Link, Switch, Route} from "react-router-dom";
 import blog0 from './Blog0/Blog0.js'
 import blog1 from './Blog1/Blog1.js'
+import blog2 from './Blog2/Blog2.js'
 import kbd_gif from './keyboard.gif'
 import pi_logo from './Blog1/Pi-hole_logo.png'
 
 const routes = [
   { path: '/blogs/blog0', name: 'blog0', Component: blog0 },
-  { path: '/blogs/blog1', name: 'blog0', Component: blog1 }
+  { path: '/blogs/blog1', name: 'blog0', Component: blog1 },
+  { path: '/blogs/blog2', name: 'blog0', Component: blog2 }
 ]
 
 function Blogs() {
@@ -41,6 +43,12 @@ function Blogs() {
                 />
                 <Card image={<Link to='/blogs/blog1' ><img src={pi_logo} alt="Raspberry Pi and Docker logos on top of a No Ads sign"/></Link>}
                     headliner={<Link to='/blogs/blog1' > Pi-hole </Link>}
+                    descrip={<div>Ad blocking on the network level. Experimenting with Docker and a Raspberry Pi.
+                    <br></br><br></br><br></br>
+                    <button class="button is-link">#software</button></div>}
+                />
+                <Card image={<Link to='/blogs/blog2' ><img src={pi_logo} alt="Raspberry Pi and Docker logos on top of a No Ads sign"/></Link>}
+                    headliner={<Link to='/blogs/blog2' > Pi-hole </Link>}
                     descrip={<div>Ad blocking on the network level. Experimenting with Docker and a Raspberry Pi.
                     <br></br><br></br><br></br>
                     <button class="button is-link">#software</button></div>}
