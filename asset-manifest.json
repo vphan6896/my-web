@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/my-web/static/css/main.2b5a2d32.chunk.css",
-    "main.js": "/my-web/static/js/main.c58006c9.chunk.js",
-    "main.js.map": "/my-web/static/js/main.c58006c9.chunk.js.map",
-    "runtime-main.js": "/my-web/static/js/runtime-main.413efdf6.js",
-    "runtime-main.js.map": "/my-web/static/js/runtime-main.413efdf6.js.map",
+    "main.css": "/my-web/static/css/main.167a3853.chunk.css",
+    "main.js": "/my-web/static/js/main.9e88182e.chunk.js",
+    "main.js.map": "/my-web/static/js/main.9e88182e.chunk.js.map",
+    "runtime-main.js": "/my-web/static/js/runtime-main.0c4e4516.js",
+    "runtime-main.js.map": "/my-web/static/js/runtime-main.0c4e4516.js.map",
     "static/css/2.8934ba4a.chunk.css": "/my-web/static/css/2.8934ba4a.chunk.css",
-    "static/js/2.bacddf9c.chunk.js": "/my-web/static/js/2.bacddf9c.chunk.js",
-    "static/js/2.bacddf9c.chunk.js.map": "/my-web/static/js/2.bacddf9c.chunk.js.map",
-    "static/js/3.22a5965a.chunk.js": "/my-web/static/js/3.22a5965a.chunk.js",
-    "static/js/3.22a5965a.chunk.js.map": "/my-web/static/js/3.22a5965a.chunk.js.map",
+    "static/js/2.bf8b88ac.chunk.js": "/my-web/static/js/2.bf8b88ac.chunk.js",
+    "static/js/2.bf8b88ac.chunk.js.map": "/my-web/static/js/2.bf8b88ac.chunk.js.map",
+    "static/js/3.63d291d5.chunk.js": "/my-web/static/js/3.63d291d5.chunk.js",
+    "static/js/3.63d291d5.chunk.js.map": "/my-web/static/js/3.63d291d5.chunk.js.map",
     "index.html": "/my-web/index.html",
     "static/css/2.8934ba4a.chunk.css.map": "/my-web/static/css/2.8934ba4a.chunk.css.map",
-    "static/css/main.2b5a2d32.chunk.css.map": "/my-web/static/css/main.2b5a2d32.chunk.css.map",
-    "static/js/2.bacddf9c.chunk.js.LICENSE.txt": "/my-web/static/js/2.bacddf9c.chunk.js.LICENSE.txt",
+    "static/css/main.167a3853.chunk.css.map": "/my-web/static/css/main.167a3853.chunk.css.map",
+    "static/js/2.bf8b88ac.chunk.js.LICENSE.txt": "/my-web/static/js/2.bf8b88ac.chunk.js.LICENSE.txt",
     "static/media/Apex-Legends-Stats.8ddacff2.png": "/my-web/static/media/Apex-Legends-Stats.8ddacff2.png",
     "static/media/Pi-hole_logo.2d6af045.png": "/my-web/static/media/Pi-hole_logo.2d6af045.png",
     "static/media/Vy_Phan.8c617bba.pdf": "/my-web/static/media/Vy_Phan.8c617bba.pdf",
@@ -36,10 +36,10 @@
     "static/media/wipDesigning.e896b37b.png": "/my-web/static/media/wipDesigning.e896b37b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.413efdf6.js",
+    "static/js/runtime-main.0c4e4516.js",
     "static/css/2.8934ba4a.chunk.css",
-    "static/js/2.bacddf9c.chunk.js",
-    "static/css/main.2b5a2d32.chunk.css",
-    "static/js/main.c58006c9.chunk.js"
+    "static/js/2.bf8b88ac.chunk.js",
+    "static/css/main.167a3853.chunk.css",
+    "static/js/main.9e88182e.chunk.js"
   ]
 }
